@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+}
+
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 100;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 48%;
+    background-color: white;
+    border-radius: 3rem;
+    padding: 2rem 2rem 2rem 0;
+    margin: 17rem auto 15rem auto;
+}
+
+.left {
+    width: 50%;
+    overflow: hidden;
+}
+
+.img-pattern {
+    position: absolute;
+    left: -9rem;
+    top: -7.7rem;
+    
+}
+
+.img-box {
+    position: absolute;
+    top: 33rem;
+    left: 31.3rem;   
+}
+
+.img-woman {
+    margin: 3rem 0 0 -6.8rem;
+}
+
+.right {
+    width: 50%;
+    padding: 2rem 3rem 3rem 4rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: hsl(237, 12%, 33%);
+}
+
+p {
+    line-height: 1.5rem;
+    color: hsl(240, 6%, 50%);
+    display: none;
+}
+
+hr {
+    color: hsl(240, 5%, 91%);
+    width: 30rem;
+    margin-left: 0;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+h3::after {
+    content: url("images/icon-arrow-down.svg");
+    position: absolute;
+    right: 50rem;
+}
+
+h3::after:target {
+    
+    
+}
