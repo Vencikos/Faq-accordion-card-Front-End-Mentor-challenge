@@ -19,14 +19,45 @@ body {
     height: 55%;
     background-color: white;
     border-radius: 2rem;
-    
     margin: 17rem auto 15rem auto;
+}
+
+@media screen and (max-width:375px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 70%;
+        margin: 10rem auto 5rem auto;
+        padding: 0;
+    }
+
+    body {
+        width: 375px;
+        height: 768px;
+    }
+
+    .right {
+        width: 100%;
+    }
+    
+    .attribution {
+        display: none;
+    }
 }
 
 .left {
     position: relative;
     width: 50%;
     overflow: hidden;
+}
+
+@media screen and (max-width:375px) {
+    .left {
+      overflow: visible;
+      width: 100%;
+    }   
 }
 
 .img-pattern {
@@ -36,6 +67,12 @@ body {
     z-index: 2;
 }
 
+@media screen and (max-width:375px) {
+    .img-pattern {
+        display: none;
+    }
+}
+
 .img-box {
     position: absolute;
     top: 33rem;
@@ -43,10 +80,28 @@ body {
     z-index: 999;  
 }
 
+@media screen and (max-width:375px) {
+    .img-box {
+      width: 30%;
+      height: auto;
+      top: 1rem;
+      left: 1rem;
+    }
+}
+
 .img-woman {
     position: relative;
     margin: 6rem 0 0 -6.8rem;
     z-index: 2;
+}
+
+@media screen and (max-width:375px) {
+    .img-woman {
+        position: absolute;
+        width: 70%;
+        height: auto;
+        margin: -11rem auto 0 auto;
+    }
 }
 
 .right {
@@ -76,8 +131,6 @@ hr {
     width: 30rem;
     margin-left: 0;
 }
-
-
 
 h3::after {
     content: url("images/icon-arrow-down.svg");
