@@ -10,6 +10,9 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     z-index: 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .main {
@@ -22,15 +25,29 @@ body {
     margin: 17rem auto 15rem auto;
 }
 
+.left {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.right {
+    width: 50%;
+    padding: 4rem 3rem 3rem 4rem;
+}
+
 @media screen and (max-width:375px) {
     .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 80%;
+        width: 87%;
         height: 70%;
-        margin: 10rem auto 5rem auto;
+        margin: 12rem auto 5rem auto;
         padding: 0;
+
+    }
+
+    html {
+        width: 375px;
+        height: 768px;
     }
 
     body {
@@ -38,26 +55,19 @@ body {
         height: 768px;
     }
 
-    .right {
+    .left {
+        overflow: visible;
         width: 100%;
+      } 
+
+    .right {
+        width: 95%;
+        padding: 9.5rem 3rem 1rem 2rem;
     }
     
     .attribution {
         display: none;
     }
-}
-
-.left {
-    position: relative;
-    width: 50%;
-    overflow: hidden;
-}
-
-@media screen and (max-width:375px) {
-    .left {
-      overflow: visible;
-      width: 100%;
-    }   
 }
 
 .img-pattern {
@@ -67,26 +77,11 @@ body {
     z-index: 2;
 }
 
-@media screen and (max-width:375px) {
-    .img-pattern {
-        display: none;
-    }
-}
-
 .img-box {
     position: absolute;
     top: 33rem;
     left: 32.3rem; 
     z-index: 999;  
-}
-
-@media screen and (max-width:375px) {
-    .img-box {
-      width: 30%;
-      height: auto;
-      top: 1rem;
-      left: 1rem;
-    }
 }
 
 .img-woman {
@@ -98,15 +93,24 @@ body {
 @media screen and (max-width:375px) {
     .img-woman {
         position: absolute;
-        width: 70%;
+        width: 20rem;
         height: auto;
-        margin: -11rem auto 0 auto;
+        margin: -9.2rem auto 0 3.5rem;
     }
-}
 
-.right {
-    width: 50%;
-    padding: 4rem 3rem 3rem 4rem;
+    .img-box {
+        width: 25%;
+        height: auto;
+        top: 9rem;
+        left: 6rem;
+      }
+
+    .img-pattern {
+        width: 20rem;
+        height: auto;
+        left: 3.5rem;
+        top: -11rem;
+    }
 }
 
 h1 {
@@ -130,6 +134,21 @@ hr {
     color: hsl(240, 5%, 91%);
     width: 30rem;
     margin-left: 0;
+}
+
+@media screen and (max-width:375px) {
+    hr {
+      width: 23.5rem;
+    }
+
+    h1 {
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
 }
 
 h3::after {
@@ -156,6 +175,19 @@ h3::after {
     width: 80%;
     
 } 
+
+@media screen and (max-width:375px) {
+    h3::after {
+        right: 4rem;
+    }
+    
+    .qa:hover h3::after {
+        right: 4rem;
+    } 
+
+
+}
+
 
 .attribution {
     text-align: center;
